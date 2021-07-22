@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public float initialSpeed = 2f;
     public float jumpHeight = 10f;
     public bool isGrounded = false;
+    public float padHeight = 16f;
 
 
     private void Update()
@@ -59,10 +60,14 @@ public class Player : MonoBehaviour
 
         }
 
-
-
     }
 
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Pad")
+        {
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, padHeight), ForceMode2D.Impulse);
+        }
+    }
 
 }
