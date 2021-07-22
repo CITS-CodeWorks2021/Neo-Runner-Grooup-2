@@ -28,6 +28,41 @@ public class Player : MonoBehaviour
             }
 
         }
+
+        if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded == true)
+        {
+            {
+                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpHeight), ForceMode2D.Impulse);
+            }
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.W) && isGrounded == true)
+        {
+            {
+                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpHeight), ForceMode2D.Impulse);
+            }
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.CapsLock))
+        {
+
+            initialSpeed = -10f;
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+
+            initialSpeed = 0f;
+
+        }
+
+
+
     }
+
+
 
 }
