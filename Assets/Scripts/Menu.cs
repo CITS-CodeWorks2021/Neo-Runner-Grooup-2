@@ -7,7 +7,7 @@ public class Menu : MonoBehaviour
 {
     public void start()
     {
-        SceneManager.LoadScene("Load_Save");
+        SceneManager.LoadScene("Tutorial");
     }
 
     public void Settings()

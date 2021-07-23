@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Active Scenes/Settings.unity
     guid: abec7f397c30c9449bc07e01e7568ade
   - enabled: 1
-    path: Assets/Scenes/Active Scenes/Load_Save.unity
+    path: Assets/Scenes/Non Active Scenes/Load_Save.unity
     guid: 6b30aebe237e1af47a5675f78897ad7c
   - enabled: 1
     path: Assets/Scenes/Active Scenes/Tutorial.unity
